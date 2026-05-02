@@ -1,0 +1,28 @@
+# Java
+*.class
+*.jar
+*.war
+*.nar
+build/
+dist/
+target/
+!gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.project
+.classpath
+*.prefs
+nbproject/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NetBeans (por si acaso)
+build.xml
