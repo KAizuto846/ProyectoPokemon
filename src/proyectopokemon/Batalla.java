@@ -1,4 +1,4 @@
-package rpg.simulador;
+package proyectopokemon;
 
 import java.util.Random;
 
