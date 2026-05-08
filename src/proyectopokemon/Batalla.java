@@ -1,7 +1,8 @@
 package proyectopokemon;
 
 import java.util.Random;
-
+//En esta parte del codigo en general su finalidad es el calculo del del daño hacia el pokemon del oponente
+//considerando las debilidades y resistencias, atques (y al pareces habilidades) de los pokemon
 /**
  * Lógica de batalla — contiene métodos estáticos y métodos con argumentos que retornan valor.
  */
@@ -45,13 +46,13 @@ public class Batalla {
      * @param poder    poder de la habilidad usada
      * @return         daño final calculado (mínimo 1)
      */
-    public static int calcularDanio(int ataque, int defensa, int poder) {
+    public static double calcularDanio(int ataque, int defensa, int poder) {
         double base = (ataque * 2.0 / defensa) * (poder / 10.0);
         //MATH RANDOM POR RNG/
         double variacion = 0.85 + (RNG.nextDouble() * 0.3); // 85% - 115%
-        int danio = (int) Math.round(base * variacion);
+        double danio = (int) Math.round(base * variacion);
         //MAYBE SOLO ES DANIO/
-        return Math.max(1, danio);
+        return danio;
     }
 
     /**
@@ -71,30 +72,99 @@ public class Batalla {
      * @param defensor tipo del defensor
      * @return         multiplicador (2.0 = súper efectivo, 0.5 = no muy efectivo, 1.0 = normal)
      */
-    public static double calcularVentajaTipo(TipoPokemon atacante, TipoPokemon defensor, int danio) {
+    public static double calcularVentajaTipo(TipoPokemon atacante, TipoPokemon defensor, double danio) {
         // Lógica simple de tipos
         switch (atacante) {
             case FUEGO:
                 if (defensor == TipoPokemon.PLANTA){
                 danio= danio * 2.0;
+                return danio;
                 }
-                return
+                
+                if (defensor == TipoPokemon.AGUA || defensor == TipoPokemon.FUEGO){
+                danio= danio * 0.5;
+                return danio;
+                }
+                else {
+                return danio;
+                }
             case AGUA:
-                return (defensor == TipoPokemon.FUEGO) ? 2.0
-                     : (defensor == TipoPokemon.PLANTA || defensor == TipoPokemon.ELECTRICO) ? 0.5
-                     : 1.0;
-            case PLANTA:
-                return (defensor == TipoPokemon.AGUA || defensor == TipoPokemon.TIERRA) ? 2.0
-                     : (defensor == TipoPokemon.FUEGO) ? 0.5
-                     : 1.0;
+                if (defensor == TipoPokemon.FUEGO){
+                danio= danio * 2.0;
+                return danio;
+                }
+                
+                if (defensor == TipoPokemon.AGUA || defensor == TipoPokemon.PLANTA){
+                danio= danio * 0.5;
+                return danio;
+                }
+                else {
+                return danio;
+                }    
             case ELECTRICO:
-                return (defensor == TipoPokemon.AGUA) ? 2.0
-                     : (defensor == TipoPokemon.TIERRA || defensor == TipoPokemon.PLANTA) ? 0.5
-                     : 1.0;
-            case TIERRA:
-                return (defensor == TipoPokemon.ELECTRICO || defensor == TipoPokemon.FUEGO) ? 2.0
-                     : (defensor == TipoPokemon.AGUA || defensor == TipoPokemon.PLANTA) ? 0.5
-                     : 1.0;
+                if (defensor == TipoPokemon.AGUA || defensor == TipoPokemon.VOLADOR){
+                danio= danio * 2.0;
+                return danio;
+                }
+                
+                if (defensor == TipoPokemon.ELECTRICO || defensor == TipoPokemon.PLANTA){
+                danio= danio * 0.5;
+                return danio;
+                }
+                else {
+                return danio;
+                }    
+            case PLANTA:
+                if (defensor == TipoPokemon.AGUA){
+                danio= danio * 2.0;
+                return danio;
+                }
+                
+                if (defensor == TipoPokemon.FUEGO || defensor == TipoPokemon.PLANTA){
+                danio= danio * 0.5;
+                return danio;
+                }
+                else {
+                return danio;
+                }    
+            case SINIESTRO:
+                if (defensor == TipoPokemon.PSIQUICO){
+                danio= danio * 2.0;
+                return danio;
+                }
+                
+                if (defensor == TipoPokemon.SINIESTRO){
+                danio= danio * 0.5;
+                return danio;
+                }
+                else {
+                return danio;
+                }    
+            case NORMAL:
+                return danio;
+                
+            case PSIQUICO:
+               
+                if (defensor == TipoPokemon.SINIESTRO || defensor == TipoPokemon.PSIQUICO){
+                danio= danio * 0.5;
+                return danio;
+                }
+                else {
+                return danio;
+                }
+            case VOLADOR:
+                if (defensor == TipoPokemon.PLANTA){
+                danio= danio * 2.0;
+                return danio;
+                }
+                
+                if (defensor == TipoPokemon.VOLADOR){
+                danio= danio * 0.5;
+                return danio;
+                }
+                else {
+                return danio;
+                }        
             default:
                 return 1.0;
         }
@@ -140,20 +210,20 @@ public class Batalla {
         turno++;
         if (turno >= MAX_TURNOS) {
             terminada = true;
-            return "⏰ ¡La batalla terminó por límite de turnos!";
+            return "¡La batalla terminó por límite de turnos!";
         }
 
         if (!pokemonRival.estaVivo() || !pokemonJugador.estaVivo()) {
             terminada = true;
             String ganador = pokemonJugador.estaVivo() ? pokemonJugador.getNombre() : pokemonRival.getNombre();
-            return "🏆 ¡" + ganador + " gana la batalla!";
+            return " ¡" + ganador + " gana la batalla!";
         }
-
+        //ztal vez podriamos eliminar todas las partes que conlleven habilidad
         // El rival elige una habilidad al azar
         int idx = RNG.nextInt(pokemonRival.getHabilidades().size());
         return ejecutarAtaque(pokemonRival, pokemonJugador, idx);
     }
-
+    //?
     public String estadoBatalla() {
         return "═══ Turno " + turno + " ═══\n"
              + "🟢 " + pokemonJugador + "\n"

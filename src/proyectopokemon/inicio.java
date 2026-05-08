@@ -35,6 +35,7 @@ public class inicio extends javax.swing.JFrame {
 
         BotonComenzar.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         BotonComenzar.setText("COMENZAR");
+        BotonComenzar.addActionListener(this::BotonComenzarActionPerformed);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
         jLabel1.setText("POKEMON JAVA");
@@ -65,6 +66,12 @@ public class inicio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BotonComenzarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComenzarActionPerformed
+  SeleccionPokemon ventana = new SeleccionPokemon();
+  ventana.setVisible(true);
+  this.dispose();
+    }//GEN-LAST:event_BotonComenzarActionPerformed
 
     /**
      * @param args the command line arguments

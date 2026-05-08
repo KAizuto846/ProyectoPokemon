@@ -1,4 +1,4 @@
-
+package proyectopokemon;
 
 /**
  * Enum con 3 o más campos — REQUISITO #1

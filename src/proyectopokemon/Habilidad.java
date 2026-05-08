@@ -1,4 +1,4 @@
-package rpg.simulador;
+package proyectopokemon;
 
 /**
  * Representa una habilidad o ataque especial del Pokémon.
@@ -20,17 +20,37 @@ public class Habilidad {
     }
 
     // -- Getters y Setters (Requisito #3) --
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+    public String getNombre() {
+        return nombre;
+    }
 
-    public String getDescripcion() { return descripcion; }
-    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-    public int getPoder() { return poder; }
-    public void setPoder(int poder) { this.poder = poder; }
+    public String getDescripcion() {
+        return descripcion;
+    }
 
-    public int getPrecision() { return precision; }
-    public void setPrecision(int precision) { this.precision = precision; }
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public int getPoder() {
+        return poder;
+    }
+
+    public void setPoder(int poder) {
+        this.poder = poder;
+    }
+
+    public int getPrecision() {
+        return precision;
+    }
+
+    public void setPrecision(int precision) {
+        this.precision = precision;
+    }
 
     @Override
     public String toString() {

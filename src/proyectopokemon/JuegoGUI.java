@@ -1,4 +1,4 @@
-package rpg.simulador;
+package proyectopokemon;
 
 import javax.swing.*;
 import java.awt.*;
