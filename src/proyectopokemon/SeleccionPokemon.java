@@ -83,7 +83,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
 
         Umbreon.setText("UMBREON");
 
-        SkarmoryIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/gifs_fixed/skarmory_fixed.gif"))); // NOI18N
+        SkarmoryIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/skarmory.png"))); // NOI18N
 
         Skarmory.setText("SKARMORY");
         Skarmory.addActionListener(new java.awt.event.ActionListener() {
@@ -92,7 +92,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
         });
 
-        RaikouIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/gifs_fixed/raikou_fixed.gif"))); // NOI18N
+        RaikouIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/raikou.png"))); // NOI18N
 
         Raikou.setText("RAIKOU");
         Raikou.addActionListener(new java.awt.event.ActionListener() {
@@ -101,23 +101,23 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
         });
 
-        GardevoirIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/gifs_fixed/gardevoir_fixed.gif"))); // NOI18N
+        GardevoirIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/gardevoir.png"))); // NOI18N
 
         Gardevoir.setText("GARDEVOIR");
 
-        CacturneIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/gifs_fixed/cacturne_fixed.gif"))); // NOI18N
+        CacturneIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/cacturne.png"))); // NOI18N
 
         Cacturne.setText("CACTURNE");
 
-        UmbreonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/gifs_fixed/umbreon_fixed.gif"))); // NOI18N
+        UmbreonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/umbreon.png"))); // NOI18N
 
         Charizard.setText("CHARIZARD");
 
-        BlazikenIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/gifs_fixed/blaziken_fixed.gif"))); // NOI18N
+        BlazikenIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/blaziken.png"))); // NOI18N
 
         Blaziken.setText("BLAZIKEN");
 
-        PiplupIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/gifs_fixed/piplup_fixed.gif"))); // NOI18N
+        PiplupIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/piplup.png"))); // NOI18N
 
         Piplup.setText("PIPLUP");
         Piplup.addActionListener(new java.awt.event.ActionListener() {
@@ -126,15 +126,15 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
         });
 
-        SnorlaxIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/gifs_fixed/snorlax_fixed.gif"))); // NOI18N
+        SnorlaxIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/snorlax.png"))); // NOI18N
 
         Snorlax.setText("SNORLAX");
 
-        VaporeonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/gifs_fixed/vaporeon_fixed.gif"))); // NOI18N
+        VaporeonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/vaporeon.png"))); // NOI18N
 
         Vaporeon.setText("VAPOREON");
 
-        CharizardIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/gifs_fixed/charizard_fixed.gif"))); // NOI18N
+        CharizardIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/charizard.png"))); // NOI18N
 
         jMenu2.setText("ELIGE TU POKEMON");
 
