@@ -18,11 +18,11 @@ target/
 .project
 .classpath
 *.prefs
-nbproject/
+nbproject/private/
 
 # OS
 .DS_Store
 Thumbs.db
 
 # NetBeans (por si acaso)
-build.xml
+# build.xml es necesario para que NetBeans reconozca el proyecto
