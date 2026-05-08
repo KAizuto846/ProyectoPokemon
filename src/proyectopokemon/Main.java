@@ -1,4 +1,4 @@
-package rpg.simulador;
+package proyectopokemon;
 
 /**
  * Punto de entrada del proyecto integrador de Programación Modular.
