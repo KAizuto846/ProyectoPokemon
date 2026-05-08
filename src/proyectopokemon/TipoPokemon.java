@@ -18,10 +18,6 @@ public enum TipoPokemon {
 
 
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
     // -- Campos del enum (requisito: 3 o más) --
     private final String tipo;
     private final String nombre;
@@ -65,11 +61,7 @@ public enum TipoPokemon {
         return velocidadBase;
     }
 
-<<<<<<< Updated upstream
-  
-=======
-    
->>>>>>> Stashed changes
+
    
     
 
