@@ -5,18 +5,19 @@ package proyectopokemon;
  * Representa los tipos de Pokémon/Personajes en el juego.
  */
 public enum TipoPokemon {
-    FUEGO("Fuego", "fuego.png", 120,50,65),
-    AGUA("Agua", "agua.png", 110, 45,45),
-    PLANTA("Planta","planta.png", 130, 70,55),
-    ELECTRICO("Eléctrico", "electrico.png", 100, 55,90),
-    SINIESTRO("Siniestro", "siniestro.png", 120,87,67 ),
-    TLUCHA("Lucha", "siniestro.png", 140, 35,78),
-    VOLADOR("Siniestro", "siniestro.png", 120, 55,68),
-    PSQUICO("Siniestro", "siniestro.png", 150, 25,80),
-    NORMAL("Siniestro", "siniestro.png", 100, 100,40);
+    FUEGO("Fuego","Charizard", "fuego.png", 120,50,65),
+    AGUA("Agua","Piplup", "agua.png", 110, 45,45),
+    PLANTA("Planta","Cacturne","planta.png", 130, 70,55),
+    ELECTRICO("Eléctrico","Raikou", "electrico.png", 100, 55,90),
+    SINIESTRO("Siniestro","Umbreon", "siniestro.png", 120,87,67 ),
+    TLUCHA("Lucha","Blaziken", "siniestro.png", 140, 35,78),
+    VOLADOR("Volador","Skarmory", "siniestro.png", 120, 55,68),
+    PSIQUICO("Psiquico","Gardevoir", "siniestro.png", 150, 25,80),
+    NORMAL("Normal","Snorlax", "siniestro.png", 100, 100,40);
 
 
     // -- Campos del enum (requisito: 3 o más) --
+    private final String tipo;
     private final String nombre;
     private final String iconoRuta;
     private final int hpBase;
@@ -25,7 +26,8 @@ public enum TipoPokemon {
 
     // Constructor del enum
 
-    private TipoPokemon(String nombre, String iconoRuta, int hpBase, int ataqueBase, int velocidadBase) {
+    private TipoPokemon(String tipo, String nombre, String iconoRuta, int hpBase, int ataqueBase, int velocidadBase) {
+        this.tipo = tipo;
         this.nombre = nombre;
         this.iconoRuta = iconoRuta;
         this.hpBase = hpBase;
@@ -33,11 +35,12 @@ public enum TipoPokemon {
         this.velocidadBase = velocidadBase;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
     public String getNombre() {
         return nombre;
-    }
-    public String getIconoRuta() {
-        return iconoRuta;
     }
 
     public int getHpBase() {
@@ -48,10 +51,12 @@ public enum TipoPokemon {
         return ataqueBase;
     }
 
-    // -- Getters --
-    public int getVelocidadBase() {   
+    public int getVelocidadBase() {
         return velocidadBase;
     }
+
+   
+    
 
     /**
      * Método estático — REQUISITO #4
