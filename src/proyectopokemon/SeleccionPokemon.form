@@ -279,7 +279,7 @@
     <Component class="javax.swing.JLabel" name="SkarmoryIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/skarmory.gif"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/gifs_fixed/skarmory_fixed.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -294,7 +294,7 @@
     <Component class="javax.swing.JLabel" name="RaikouIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/raikou.gif"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/gifs_fixed/raikou_fixed.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -309,7 +309,7 @@
     <Component class="javax.swing.JLabel" name="GardevoirIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/gardevoir.gif"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/gifs_fixed/gardevoir_fixed.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -321,7 +321,7 @@
     <Component class="javax.swing.JLabel" name="CacturneIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/cacturne.gif"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/gifs_fixed/cacturne_fixed.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -333,7 +333,7 @@
     <Component class="javax.swing.JLabel" name="UmbreonIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/umbreon.gif"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/gifs_fixed/umbreon_fixed.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -345,7 +345,7 @@
     <Component class="javax.swing.JLabel" name="BlazikenIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/blaziken.gif"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/gifs_fixed/blaziken_fixed.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -357,7 +357,7 @@
     <Component class="javax.swing.JLabel" name="PiplupIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/piplup.gif"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/gifs_fixed/piplup_fixed.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -372,7 +372,7 @@
     <Component class="javax.swing.JLabel" name="SnorlaxIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/snorlax.gif"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/gifs_fixed/snorlax_fixed.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -384,7 +384,7 @@
     <Component class="javax.swing.JLabel" name="VaporeonIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/vaporeon.gif"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/gifs_fixed/vaporeon_fixed.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -396,7 +396,7 @@
     <Component class="javax.swing.JLabel" name="CharizardIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/charizard.gif"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/gifs_fixed/charizard_fixed.gif"/>
         </Property>
       </Properties>
     </Component>
