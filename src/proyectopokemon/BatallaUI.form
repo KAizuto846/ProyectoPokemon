@@ -123,14 +123,14 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/blazikenBack.gif"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/blazikenBack.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/blaziken.gif"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/blaziken.png"/>
         </Property>
       </Properties>
     </Component>

@@ -9,7 +9,11 @@ public enum TipoPokemon {
     AGUA("Agua", "Domina torrentes y oleajes", "agua.png", 110, 45),
     PLANTA("Planta", "Controla la naturaleza", "planta.png", 130, 40),
     ELECTRICO("Eléctrico", "Golpea con rayos fulminantes", "electrico.png", 100, 55),
-    TIERRA("Tierra", "Inquebrantable como la roca", "tierra.png", 140, 35);
+    TIERRA("Tierra", "Inquebrantable como la roca", "tierra.png", 140, 35),
+    NORMAL("Normal", "Ataques básicos y equilibrados", "normal.png", 100, 40),
+    VOLADOR("Volador", "Domina los cielos", "volador.png", 100, 45),
+    PSIQUICO("Psíquico", "Poderes mentales", "psiquico.png", 90, 55),
+    SINIESTRO("Siniestro", "Ataques oscuros", "siniestro.png", 110, 50);
 
     // -- Campos del enum (requisito: 3 o más) --
     private final String nombre;

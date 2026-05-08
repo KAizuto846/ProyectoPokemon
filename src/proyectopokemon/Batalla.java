@@ -189,9 +189,9 @@ public class Batalla {
             return "💨 ¡" + atacante.getNombre() + " falló el ataque!";
         }
 
-        double ventaja = calcularVentajaTipo(atacante.getTipo(), defensor.getTipo());
-        int danioBase = calcularDanio(atacante.getAtaque(), defensor.getDefensa(), habilidad.getPoder());
-        int danioFinal = (int) Math.round(danioBase * ventaja);
+        double danioBase = calcularDanio(atacante.getAtaque(), defensor.getDefensa(), habilidad.getPoder());
+        double ventaja = calcularVentajaTipo(atacante.getTipo(), defensor.getTipo(), danioBase);
+        int danioFinal = (int) Math.round(ventaja);
 
         defensor.setHp(defensor.getHp() - danioFinal);
 
