@@ -56,11 +56,11 @@ public class SeleccionPokemon extends javax.swing.JFrame {
         CharizardIMG = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
-        jMenu7 = new javax.swing.JMenu();
+        jMenuItem5 = new javax.swing.JMenuItem();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -80,10 +80,15 @@ public class SeleccionPokemon extends javax.swing.JFrame {
         jLabel1.setText("ELIGE 3 POKEMONES");
 
         BotonFinalizar.setText("FINALIZAR");
+        BotonFinalizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonFinalizarActionPerformed(evt);
+            }
+        });
 
         Umbreon.setText("UMBREON");
 
-        SkarmoryIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/skarmory.png"))); // NOI18N
+        SkarmoryIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/skarmory.gif"))); // NOI18N
 
         Skarmory.setText("SKARMORY");
         Skarmory.addActionListener(new java.awt.event.ActionListener() {
@@ -92,7 +97,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
         });
 
-        RaikouIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/raikou.png"))); // NOI18N
+        RaikouIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/raikou.gif"))); // NOI18N
 
         Raikou.setText("RAIKOU");
         Raikou.addActionListener(new java.awt.event.ActionListener() {
@@ -101,23 +106,23 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
         });
 
-        GardevoirIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/gardevoir.png"))); // NOI18N
+        GardevoirIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/gardevoir.gif"))); // NOI18N
 
         Gardevoir.setText("GARDEVOIR");
 
-        CacturneIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/cacturne.png"))); // NOI18N
+        CacturneIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/cacturne.gif"))); // NOI18N
 
         Cacturne.setText("CACTURNE");
 
-        UmbreonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/umbreon.png"))); // NOI18N
+        UmbreonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/umbreon.gif"))); // NOI18N
 
         Charizard.setText("CHARIZARD");
 
-        BlazikenIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/blaziken.png"))); // NOI18N
+        BlazikenIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/blaziken.gif"))); // NOI18N
 
         Blaziken.setText("BLAZIKEN");
 
-        PiplupIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/piplup.png"))); // NOI18N
+        PiplupIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/piplup.gif"))); // NOI18N
 
         Piplup.setText("PIPLUP");
         Piplup.addActionListener(new java.awt.event.ActionListener() {
@@ -126,34 +131,49 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
         });
 
-        SnorlaxIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/snorlax.png"))); // NOI18N
+        SnorlaxIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/snorlax.gif"))); // NOI18N
 
         Snorlax.setText("SNORLAX");
 
-        VaporeonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/vaporeon.png"))); // NOI18N
+        VaporeonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/vaporeon.gif"))); // NOI18N
 
         Vaporeon.setText("VAPOREON");
 
-        CharizardIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/charizard.png"))); // NOI18N
+        CharizardIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/charizard.gif"))); // NOI18N
 
         jMenu2.setText("ELIGE TU POKEMON");
 
-        jMenu6.setText("File");
-        jMenu2.add(jMenu6);
+        jMenuItem3.setText("Seleccion Pokemon");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem3);
 
         jMenuBar1.add(jMenu2);
 
         jMenu3.setText("ELIGE TU PERSONAJE");
 
-        jMenu4.setText("File");
-        jMenu3.add(jMenu4);
+        jMenuItem4.setText("Seleccion Entrenador");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem4);
 
         jMenuBar1.add(jMenu3);
 
         jMenu5.setText("ELIGE EL ORDEN DE TUS POKEMON");
 
-        jMenu7.setText("File");
-        jMenu5.add(jMenu7);
+        jMenuItem5.setText("Seleccion del Orden de tus Pokemones");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem5);
 
         jMenuBar1.add(jMenu5);
 
@@ -207,9 +227,9 @@ public class SeleccionPokemon extends javax.swing.JFrame {
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(Gardevoir)
                                             .addComponent(GardevoirIMG)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addGap(51, 51, 51)
-                                        .addComponent(SnorlaxIMG, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(53, 53, 53)
+                                        .addComponent(SnorlaxIMG, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(40, 40, 40)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -234,23 +254,20 @@ public class SeleccionPokemon extends javax.swing.JFrame {
                 .addGap(39, 39, 39)
                 .addComponent(jLabel1)
                 .addGap(8, 8, 8)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(CharizardIMG)
-                            .addComponent(PiplupIMG, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(SnorlaxIMG, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(VaporeonIMG, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Charizard)
-                            .addComponent(Blaziken)
-                            .addComponent(Piplup)
-                            .addComponent(Snorlax)
-                            .addComponent(Vaporeon)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(BlazikenIMG)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(CharizardIMG)
+                        .addComponent(PiplupIMG, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(SnorlaxIMG, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(VaporeonIMG, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addComponent(BlazikenIMG))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Charizard)
+                    .addComponent(Blaziken)
+                    .addComponent(Piplup)
+                    .addComponent(Snorlax)
+                    .addComponent(Vaporeon))
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -292,6 +309,25 @@ public class SeleccionPokemon extends javax.swing.JFrame {
     private void RaikouActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RaikouActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_RaikouActionPerformed
+
+    private void BotonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonFinalizarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonFinalizarActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        SeleccionPokemon mostrar = new SeleccionPokemon();
+        mostrar.setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+         SeleccionEntrenador mostrar = new SeleccionEntrenador();
+        mostrar.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+         SeleccionOrdenPokemon mostrar = new SeleccionOrdenPokemon();
+        mostrar.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -357,12 +393,12 @@ public class SeleccionPokemon extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenu jMenu7;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
     // End of variables declaration//GEN-END:variables
 }

@@ -48,7 +48,7 @@
                           <Component id="LuchaBoton" min="-2" max="-2" attributes="0"/>
                           <Component id="CambioBoton" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="76" max="32767" attributes="0"/>
+                      <EmptySpace pref="73" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="MochilaBotonç" min="-2" max="-2" attributes="0"/>
                           <Component id="HuirBoton" min="-2" max="-2" attributes="0"/>
@@ -110,6 +110,9 @@
     <Component class="javax.swing.JTextField" name="CuadroDeMensajes">
     </Component>
     <Component class="javax.swing.JButton" name="LuchaBoton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="LUCHAR"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="MochilaBoton&#xe7;">
     </Component>
@@ -120,14 +123,14 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/blazikenBack.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/blazikenBack.gif"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/blaziken.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/blaziken.gif"/>
         </Property>
       </Properties>
     </Component>

@@ -42,11 +42,14 @@
             <Property name="text" type="java.lang.String" value="ELIGE TU POKEMON"/>
           </Properties>
           <SubComponents>
-            <Menu class="javax.swing.JMenu" name="jMenu6">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="File"/>
+                <Property name="text" type="java.lang.String" value="Seleccion Pokemon"/>
               </Properties>
-            </Menu>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem3ActionPerformed"/>
+              </Events>
+            </MenuItem>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu3">
@@ -54,11 +57,14 @@
             <Property name="text" type="java.lang.String" value="ELIGE TU PERSONAJE"/>
           </Properties>
           <SubComponents>
-            <Menu class="javax.swing.JMenu" name="jMenu4">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="File"/>
+                <Property name="text" type="java.lang.String" value="Seleccion Entrenador"/>
               </Properties>
-            </Menu>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem4ActionPerformed"/>
+              </Events>
+            </MenuItem>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu5">
@@ -66,11 +72,14 @@
             <Property name="text" type="java.lang.String" value="ELIGE EL ORDEN DE TUS POKEMON"/>
           </Properties>
           <SubComponents>
-            <Menu class="javax.swing.JMenu" name="jMenu7">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
               <Properties>
-                <Property name="text" type="java.lang.String" value="File"/>
+                <Property name="text" type="java.lang.String" value="Seleccion del Orden de tus Pokemones"/>
               </Properties>
-            </Menu>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem5ActionPerformed"/>
+              </Events>
+            </MenuItem>
           </SubComponents>
         </Menu>
       </SubComponents>
@@ -158,9 +167,9 @@
                                           <Component id="GardevoirIMG" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                      <Component id="SnorlaxIMG" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                      <Component id="SnorlaxIMG" min="-2" pref="77" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
@@ -198,27 +207,22 @@
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="CharizardIMG" min="-2" max="-2" attributes="0"/>
-                          <Component id="PiplupIMG" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="SnorlaxIMG" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="VaporeonIMG" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="Charizard" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Blaziken" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Piplup" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Snorlax" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Vaporeon" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="CharizardIMG" min="-2" max="-2" attributes="0"/>
+                      <Component id="PiplupIMG" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="SnorlaxIMG" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="VaporeonIMG" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Component id="BlazikenIMG" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="BlazikenIMG" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Charizard" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Blaziken" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Piplup" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Snorlax" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Vaporeon" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -270,6 +274,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="FINALIZAR"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonFinalizarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JCheckBox" name="Umbreon">
       <Properties>
@@ -279,7 +286,7 @@
     <Component class="javax.swing.JLabel" name="SkarmoryIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/skarmory.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/skarmory.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -294,7 +301,7 @@
     <Component class="javax.swing.JLabel" name="RaikouIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/raikou.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/raikou.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -309,7 +316,7 @@
     <Component class="javax.swing.JLabel" name="GardevoirIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/gardevoir.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/gardevoir.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -321,7 +328,7 @@
     <Component class="javax.swing.JLabel" name="CacturneIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/cacturne.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/cacturne.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -333,7 +340,7 @@
     <Component class="javax.swing.JLabel" name="UmbreonIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/umbreon.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/umbreon.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -345,7 +352,7 @@
     <Component class="javax.swing.JLabel" name="BlazikenIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/blaziken.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/blaziken.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -357,7 +364,7 @@
     <Component class="javax.swing.JLabel" name="PiplupIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/piplup.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/piplup.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -372,7 +379,7 @@
     <Component class="javax.swing.JLabel" name="SnorlaxIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/snorlax.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/snorlax.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -384,7 +391,7 @@
     <Component class="javax.swing.JLabel" name="VaporeonIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/vaporeon.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/vaporeon.gif"/>
         </Property>
       </Properties>
     </Component>
@@ -396,7 +403,7 @@
     <Component class="javax.swing.JLabel" name="CharizardIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/charizard.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/charizard.gif"/>
         </Property>
       </Properties>
     </Component>

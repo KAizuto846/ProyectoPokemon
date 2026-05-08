@@ -68,9 +68,10 @@ public class inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotonComenzarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComenzarActionPerformed
-  SeleccionPokemon ventana = new SeleccionPokemon();
+   SeleccionPokemon ventana = new SeleccionPokemon();
   ventana.setVisible(true);
   this.dispose();
+// TODO add your handling code here:
     }//GEN-LAST:event_BotonComenzarActionPerformed
 
     /**
