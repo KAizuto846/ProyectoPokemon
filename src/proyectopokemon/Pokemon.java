@@ -1,6 +1,5 @@
 package proyectopokemon;
 
-import java.util.ArrayList;
 
 /**
  * Clase principal del Pokémon — con constructores, getters, setters.
@@ -15,8 +14,8 @@ public class Pokemon {
     private int hpMax;
     private int ataque;
     private int defensa;
-    private ArrayList<Habilidad> habilidades; // REQUISITO #2: ArrayList
-
+    private int velocidad;
+    
     // -- Constructor con argumentos (Requisito #3) --
     public Pokemon(String nombre, TipoPokemon tipo, int nivel) {
         this.nombre = nombre;
@@ -26,47 +25,79 @@ public class Pokemon {
         this.hp = this.hpMax;
         this.ataque = tipo.getAtaqueBase() + (nivel * 3);
         this.defensa = 30 + (nivel * 2);
-        this.habilidades = new ArrayList<>();
-    }
+       } 
 
     // -- Getters y Setters (Requisito #3) --
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
 
-    public TipoPokemon getTipo() { return tipo; }
-    public void setTipo(TipoPokemon tipo) { this.tipo = tipo; }
-
-    public int getNivel() { return nivel; }
-    public void setNivel(int nivel) { this.nivel = nivel; }
-
-    public int getHp() { return hp; }
-    public void setHp(int hp) {
-        this.hp = Math.max(0, Math.min(hp, this.hpMax));
+    public String getNombre() {
+        return nombre;
     }
 
-    public int getHpMax() { return hpMax; }
-    public int getAtaque() { return ataque; }
-    public int getDefensa() { return defensa; }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-    public ArrayList<Habilidad> getHabilidades() { return habilidades; }
+    public TipoPokemon getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoPokemon tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public int getHpMax() {
+        return hpMax;
+    }
+
+    public void setHpMax(int hpMax) {
+        this.hpMax = hpMax;
+    }
+
+    public int getAtaque() {
+        return ataque;
+    }
+
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
+    }
+
+    public int getDefensa() {
+        return defensa;
+    }
+
+    public void setDefensa(int defensa) {
+        this.defensa = defensa;
+    }
+
+    public int getVelocidad() {
+        return velocidad;
+    }
+
+    public void setVelocidad(int velocidad) {
+        this.velocidad = velocidad;
+    }
+
+   
 
     // -- Métodos de instancia --
 
-    /** Agrega una habilidad al ArrayList */
-    public void agregarHabilidad(Habilidad h) {
-        if (habilidades.size() < 4) {
-            habilidades.add(h);
-        }
-    }
 
-    /** Muestra las habilidades disponibles */
-    public String mostrarHabilidades() {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < habilidades.size(); i++) {
-            sb.append(i + 1).append(". ").append(habilidades.get(i)).append("\n");
-        }
-        return sb.toString();
-    }
 
     public boolean estaVivo() {
         return hp > 0;
