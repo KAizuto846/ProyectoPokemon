@@ -5,6 +5,7 @@ package proyectopokemon;
  * Representa los tipos de Pokémon/Personajes en el juego.
  */
 public enum TipoPokemon {
+
     FUEGO("Fuego","Charizard", "fuego.png", 120,50,65),
     AGUA("Agua","Piplup", "agua.png", 110, 45,45),
     PLANTA("Planta","Cacturne","planta.png", 130, 70,55),
@@ -14,6 +15,7 @@ public enum TipoPokemon {
     VOLADOR("Volador","Skarmory", "siniestro.png", 120, 55,68),
     PSIQUICO("Psiquico","Gardevoir", "siniestro.png", 150, 25,80),
     NORMAL("Normal","Snorlax", "siniestro.png", 100, 100,40);
+
 
 
     // -- Campos del enum (requisito: 3 o más) --
@@ -43,6 +45,10 @@ public enum TipoPokemon {
         return nombre;
     }
 
+    public String getIconoRuta() {
+        return iconoRuta;
+    }
+
     public int getHpBase() {
         return hpBase;
     }
@@ -55,6 +61,7 @@ public enum TipoPokemon {
         return velocidadBase;
     }
 
+  
    
     
 
