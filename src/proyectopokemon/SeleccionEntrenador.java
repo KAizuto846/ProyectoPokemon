@@ -135,14 +135,14 @@ public class SeleccionEntrenador extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jCheckBox13))
-                    .addComponent(jCheckBox14, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE))
+                    .addComponent(jCheckBox14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(30, 30, 30)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(NombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
                 .addComponent(BotonGuardar)
-                .addGap(64, 64, 64))
+                .addContainerGap())
         );
 
         pack();
