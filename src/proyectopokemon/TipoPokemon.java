@@ -1,4 +1,4 @@
-package rpg.simulador;
+
 
 /**
  * Enum con 3 o más campos — REQUISITO #1

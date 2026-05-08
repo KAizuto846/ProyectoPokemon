@@ -24,10 +24,17 @@ public class Batalla {
     }
 
     // -- Getters --
-    public Pokemon getPokemonJugador() { return pokemonJugador; }
-    public Pokemon getPokemonRival() { return pokemonRival; }
-    public int getTurno() { return turno; }
-    public boolean isTerminada() { return terminada; }
+    public Pokemon getPokemonJugador() {
+        return pokemonJugador; }
+    
+    public Pokemon getPokemonRival() {
+        return pokemonRival; }
+    
+    public int getTurno() {
+        return turno; }
+    
+    public boolean isTerminada() {
+        return terminada; }
 
     /**
      * Método con argumentos que retorna valor — REQUISITO #5
@@ -40,8 +47,10 @@ public class Batalla {
      */
     public static int calcularDanio(int ataque, int defensa, int poder) {
         double base = (ataque * 2.0 / defensa) * (poder / 10.0);
+        //MATH RANDOM POR RNG/
         double variacion = 0.85 + (RNG.nextDouble() * 0.3); // 85% - 115%
         int danio = (int) Math.round(base * variacion);
+        //MAYBE SOLO ES DANIO/
         return Math.max(1, danio);
     }
 
@@ -50,6 +59,7 @@ public class Batalla {
      * Determina si un ataque acierta según la precisión.
      */
     public static boolean acierta(int precision) {
+        //CAMBIAR RNG/
         return RNG.nextInt(100) < precision;
     }
 
@@ -61,13 +71,14 @@ public class Batalla {
      * @param defensor tipo del defensor
      * @return         multiplicador (2.0 = súper efectivo, 0.5 = no muy efectivo, 1.0 = normal)
      */
-    public static double calcularVentajaTipo(TipoPokemon atacante, TipoPokemon defensor) {
+    public static double calcularVentajaTipo(TipoPokemon atacante, TipoPokemon defensor, int danio) {
         // Lógica simple de tipos
         switch (atacante) {
             case FUEGO:
-                return (defensor == TipoPokemon.PLANTA) ? 2.0
-                     : (defensor == TipoPokemon.AGUA) ? 0.5
-                     : 1.0;
+                if (defensor == TipoPokemon.PLANTA){
+                danio= danio * 2.0;
+                }
+                return
             case AGUA:
                 return (defensor == TipoPokemon.FUEGO) ? 2.0
                      : (defensor == TipoPokemon.PLANTA || defensor == TipoPokemon.ELECTRICO) ? 0.5
