@@ -70,4 +70,13 @@
     nbproject/build-impl.xml file. 
 
     -->
+
+    <!-- ============================================================ -->
+    <!-- Riz: Copia las imágenes a build/classes después de compilar  -->
+    <!-- ============================================================ -->
+    <target name="-post-compile">
+        <copy todir="${build.classes.dir}/proyectopokemon/Imagenes">
+            <fileset dir="src/proyectopokemon/Imagenes"/>
+        </copy>
+    </target>
 </project>
