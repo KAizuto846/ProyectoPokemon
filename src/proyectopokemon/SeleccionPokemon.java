@@ -464,8 +464,115 @@ public class SeleccionPokemon extends javax.swing.JFrame {
     }//GEN-LAST:event_RaikouActionPerformed
 
     private void BotonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonFinalizarActionPerformed
-        
-        
+        String poke1 = "", poke2 = "", poke3 = "";
+        int i = 0;
+
+        if (Charizard.isSelected()) {
+            if (i == 0) {
+                poke1 = "Charizard";
+            } else if (i == 1) {
+                poke2 = "Charizard";
+            } else if (i == 2) {
+                poke3 = "Charizard";
+            }
+            i=i+1;
+        }
+        if (Blaziken.isSelected()) {
+            if (i == 0) {
+                poke1 = "Blaziken";
+            } else if (i == 1) {
+                poke2 = "Blaziken";
+            } else if (i == 2) {
+                poke3 = "Blaziken";
+            }
+            i=i+1;
+        }
+        if (Piplup.isSelected()) {
+            if (i == 0) {
+                poke1 = "Piplup";
+            } else if (i == 1) {
+                poke2 = "Piplup";
+            } else if (i == 2) {
+                poke3 = "Piplup";
+            }
+            i=i+1;
+        }
+        if (Snorlax.isSelected()) {
+            if (i == 0) {
+                poke1 = "Snorlax";
+            } else if (i == 1) {
+                poke2 = "Snorlax";
+            } else if (i == 2) {
+                poke3 = "Snorlax";
+            }
+            i=i+1;
+        }
+        if (Vaporeon.isSelected()) {
+            if (i == 0) {
+                poke1 = "Vaporeon";
+            } else if (i == 1) {
+                poke2 = "Vaporeon";
+            } else if (i == 2) {
+                poke3 = "Vaporeon";
+            }
+            i=i+1;
+        }
+        if (Umbreon.isSelected()) {
+            if (i == 0) {
+                poke1 = "Umbreon";
+            } else if (i == 1) {
+                poke2 = "Umbreon";
+            } else if (i == 2) {
+                poke3 = "Umbreon";
+            }
+            i=i+1;
+        }
+        if (Skarmory.isSelected()) {
+            if (i == 0) {
+                poke1 = "Skarmory";
+            } else if (i == 1) {
+                poke2 = "Skarmory";
+            } else if (i == 2) {
+                poke3 = "Skarmory";
+            }
+            i=i+1;
+        }
+        if (Raikou.isSelected()) {
+            if (i == 0) {
+                poke1 = "Raikou";
+            } else if (i == 1) {
+                poke2 = "Raikou";
+            } else if (i == 2) {
+                poke3 = "Raikou";
+            }
+            i=i+1;
+        }
+        if (Gardevoir.isSelected()) {
+            if (i == 0) {
+                poke1 = "Gardevoir";
+            } else if (i == 1) {
+                poke2 = "Gardevoir";
+            } else if (i == 2) {
+                poke3 = "Gardevoir";
+            }
+            i=i+1;
+        }
+        if (Cacturne.isSelected()) {
+            if (i == 0) {
+                poke1 = "Cacturne";
+            } else if (i == 1) {
+                poke2 = "Cacturne";
+            } else if (i == 2) {
+                poke3 = "Cacturne";
+            }
+            i=i+1;
+        }
+
+        // Abrir ventana de orden pasando los 3 Pokémon
+        SeleccionOrdenPokemon ventana = new SeleccionOrdenPokemon(poke1, poke2, poke3);
+        ventana.setVisible(true);
+        this.dispose();
+
     }//GEN-LAST:event_BotonFinalizarActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
