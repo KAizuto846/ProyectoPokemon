@@ -139,7 +139,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
         });
 
-        BlazikenIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/blaziken.png"))); // NOI18N
+        BlazikenIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/blaziken.png"))); // NOI18N
 
         Blaziken.setText("BLAZIKEN");
         Blaziken.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +148,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
         });
 
-        PiplupIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/piplup.png"))); // NOI18N
+        PiplupIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/piplup.png"))); // NOI18N
 
         Piplup.setText("PIPLUP");
         Piplup.addActionListener(new java.awt.event.ActionListener() {
@@ -175,7 +175,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
         });
 
-        CharizardIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/charizard.png"))); // NOI18N
+        CharizardIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/charizard.png"))); // NOI18N
 
         jMenu2.setText("ELIGE TU POKEMON");
 
@@ -464,7 +464,8 @@ public class SeleccionPokemon extends javax.swing.JFrame {
     }//GEN-LAST:event_RaikouActionPerformed
 
     private void BotonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonFinalizarActionPerformed
-        // TODO add your handling code here:
+        
+        
     }//GEN-LAST:event_BotonFinalizarActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed

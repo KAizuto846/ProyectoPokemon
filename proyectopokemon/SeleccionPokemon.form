@@ -352,7 +352,7 @@
     <Component class="javax.swing.JLabel" name="BlazikenIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/blaziken.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/blaziken.png"/>
         </Property>
       </Properties>
     </Component>
@@ -364,7 +364,7 @@
     <Component class="javax.swing.JLabel" name="PiplupIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/piplup.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/piplup.png"/>
         </Property>
       </Properties>
     </Component>
@@ -403,7 +403,7 @@
     <Component class="javax.swing.JLabel" name="CharizardIMG">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/charizard.png"/>
+          <Image iconType="3" name="/proyectopokemon/Imagenes/charizard.png"/>
         </Property>
       </Properties>
     </Component>

@@ -17,6 +17,10 @@ public class SeleccionOrdenPokemon extends javax.swing.JFrame {
         initComponents();
     }
 
+    SeleccionOrdenPokemon(String poke1, String poke2, String poke3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -55,6 +59,24 @@ public class SeleccionOrdenPokemon extends javax.swing.JFrame {
         ListaPokemonesDisponibles.setColumns(20);
         ListaPokemonesDisponibles.setRows(5);
         jScrollPane1.setViewportView(ListaPokemonesDisponibles);
+
+        PrimerPokemon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PrimerPokemonActionPerformed(evt);
+            }
+        });
+
+        SegundoPokemon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SegundoPokemonActionPerformed(evt);
+            }
+        });
+
+        TercerPokemon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TercerPokemonActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("PRIMER POKEMON");
 
@@ -203,6 +225,18 @@ BatallaUI ventana = new BatallaUI();
   ventana.setVisible(true);
   this.dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void PrimerPokemonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrimerPokemonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PrimerPokemonActionPerformed
+
+    private void SegundoPokemonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SegundoPokemonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SegundoPokemonActionPerformed
+
+    private void TercerPokemonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TercerPokemonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TercerPokemonActionPerformed
 
     /**
      * @param args the command line arguments

@@ -178,10 +178,19 @@
       </SubComponents>
     </Container>
     <Component class="javax.swing.JTextField" name="PrimerPokemon">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PrimerPokemonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="SegundoPokemon">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SegundoPokemonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TercerPokemon">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TercerPokemonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
