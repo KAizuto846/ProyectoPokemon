@@ -8,9 +8,8 @@ public class SeleccionOrdenPokemon extends javax.swing.JFrame {
     private String nombrePoke1;
     private String nombrePoke2;
     private String nombrePoke3;
-    private String nombreEntrenador; // @riztutov
+    private String nombreEntrenador; 
 
-    // @isai — constructor con nombre + 3 Pokémon
     SeleccionOrdenPokemon(String nombre, String poke1, String poke2, String poke3) {
         initComponents();
         this.nombreEntrenador = nombre;

@@ -12,7 +12,6 @@ public enum TipoPokemon {
     PSIQUICO("Psiquico","Gardevoir", "siniestro.png", 150, 25,80),
     NORMAL("Normal","Snorlax", "siniestro.png", 100, 100,40);
 
-    // Campos del enum
     private final String tipo;
     private final String nombre;
     private final String iconoRuta;
@@ -20,7 +19,6 @@ public enum TipoPokemon {
     private final int ataqueBase;
     private final int velocidadBase;
 
-    // Constructor del enum
 
     private TipoPokemon(String tipo, String nombre, String iconoRuta, int hpBase, int ataqueBase, int velocidadBase) {
         this.tipo = tipo;
@@ -59,10 +57,6 @@ public enum TipoPokemon {
    
     
 
-    /**
-     * Método estático — REQUISITO #4
-     * Devuelve un tipo aleatorio.
-     */
     public static TipoPokemon aleatorio() {
         TipoPokemon[] tipos = values();
         return tipos[(int) (Math.random() * tipos.length)];

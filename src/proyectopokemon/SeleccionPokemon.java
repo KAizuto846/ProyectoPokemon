@@ -2,13 +2,12 @@ package proyectopokemon;
 
 public class SeleccionPokemon extends javax.swing.JFrame {
 
-    private String nombreEntrenador; // @riztutov — nombre del jugador
+    private String nombreEntrenador; 
 
     public SeleccionPokemon() {
         initComponents();
     }
 
-    // @isai — constructor con nombre del entrenador
     public SeleccionPokemon(String nombre) {
         initComponents();
         this.nombreEntrenador = nombre;
@@ -573,12 +572,12 @@ public class SeleccionPokemon extends javax.swing.JFrame {
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         SeleccionEntrenador mostrar = new SeleccionEntrenador();
-        mostrar.setVisible(true);        // TODO add your handling code here:
+        mostrar.setVisible(true);        
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         SeleccionOrdenPokemon mostrar = new SeleccionOrdenPokemon();
-        mostrar.setVisible(true);        // TODO add your handling code here:
+        mostrar.setVisible(true);        
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void CharizardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CharizardActionPerformed
