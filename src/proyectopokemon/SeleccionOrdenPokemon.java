@@ -16,23 +16,17 @@ public class SeleccionOrdenPokemon extends javax.swing.JFrame {
     public SeleccionOrdenPokemon() {
         initComponents();
     }
-
-    // Variables para guardar los 3 Pokémon seleccionados
     private String nombrePoke1;
     private String nombrePoke2;
     private String nombrePoke3;
 
-    // Constructor que recibe los 3 Pokémon desde SeleccionPokemon — @isai
     SeleccionOrdenPokemon(String poke1, String poke2, String poke3) {
         initComponents();
         this.nombrePoke1 = poke1;
         this.nombrePoke2 = poke2;
         this.nombrePoke3 = poke3;
-        
-        // Mostrar los Pokémon disponibles en el JTextArea — @riztutov
-        ListaPokemonesDisponibles.setText(
-            "Pokémon 1: " + poke1 + "\nPokémon 2: " + poke2 + "\nPokémon 3: " + poke3
-        );
+
+        ListaPokemonesDisponibles.setText("Poknmon 1: " + poke1 + "\nPokémon 2: " + poke2 + "\nPokémon 3: " + poke3);
     }
 
     /**
@@ -57,6 +51,7 @@ public class SeleccionOrdenPokemon extends javax.swing.JFrame {
         PrimerPokemonIMG = new javax.swing.JLabel();
         SegundoPokemonIMG = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        Mensaje = new javax.swing.JTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
@@ -153,65 +148,70 @@ public class SeleccionOrdenPokemon extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(202, 202, 202)
+                .addComponent(jLabel1)
+                .addGap(265, 265, 265))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(118, 118, 118)
+                .addComponent(jLabel2)
+                .addGap(155, 155, 155)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(161, 161, 161))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton1)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1))
+                        .addComponent(PrimerPokemon, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(105, 105, 105)
+                        .addComponent(SegundoPokemon, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(105, 105, 105)
+                        .addComponent(TercerPokemon, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(143, 143, 143)
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(59, 59, 59)
-                                .addComponent(jLabel2)
-                                .addGap(155, 155, 155)
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel4)
-                                .addGap(68, 68, 68))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(PrimerPokemon, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(105, 105, 105)
-                                .addComponent(SegundoPokemon, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(105, 105, 105)
-                                .addComponent(TercerPokemon, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(29, 29, 29))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(PrimerPokemonIMG)
-                                .addGap(54, 54, 54)
-                                .addComponent(SegundoPokemonIMG)
-                                .addGap(34, 34, 34)
-                                .addComponent(TercerPokemonIMG))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 748, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(PrimerPokemonIMG)
+                        .addGap(54, 54, 54)
+                        .addComponent(SegundoPokemonIMG)
+                        .addGap(34, 34, 34)
+                        .addComponent(TercerPokemonIMG))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(71, 71, 71)
+                        .addComponent(Mensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 377, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(93, 93, 93))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(jLabel1)
-                .addGap(13, 13, 13)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SegundoPokemon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PrimerPokemon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TercerPokemon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PrimerPokemonIMG)
-                    .addComponent(SegundoPokemonIMG)
-                    .addComponent(TercerPokemonIMG))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel1)
+                        .addGap(13, 13, 13)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SegundoPokemon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(PrimerPokemon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TercerPokemon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(PrimerPokemonIMG)
+                            .addComponent(SegundoPokemonIMG)
+                            .addComponent(TercerPokemonIMG))
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Mensaje, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)))
                 .addComponent(jButton1)
                 .addContainerGap(25, Short.MAX_VALUE))
         );
@@ -235,21 +235,59 @@ public class SeleccionOrdenPokemon extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-BatallaUI ventana = new BatallaUI();
-  ventana.setVisible(true);
-  this.dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        // Validar que los 3 campos estén llenos — @isai
+        String p1 = PrimerPokemon.getText().trim();
+        String p2 = SegundoPokemon.getText().trim();
+        String p3 = TercerPokemon.getText().trim();
+        
+        if (p1.isEmpty() || p2.isEmpty() || p3.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "Escribe los 3 Pokémon en orden");
+            return;
+        }
+        
+        // Abrir batalla con los 3 Pokémon seleccionados — @riztutov
+        BatallaUI ventana = new BatallaUI(p1, p2, p3);
+        ventana.setVisible(true);
+        this.dispose();
+    }
 
     private void PrimerPokemonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrimerPokemonActionPerformed
-        // TODO add your handling code here:
+        String escrito = PrimerPokemon.getText().trim();
+
+        if (escrito.equalsIgnoreCase(nombrePoke1)
+                || escrito.equalsIgnoreCase(nombrePoke2)
+                || escrito.equalsIgnoreCase(nombrePoke3)) {
+
+            String ruta = "/proyectopokemon/Imagenes/" + escrito.toLowerCase() + ".png";
+            PrimerPokemonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource(ruta)));
+
+        }
     }//GEN-LAST:event_PrimerPokemonActionPerformed
 
     private void SegundoPokemonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SegundoPokemonActionPerformed
-        // TODO add your handling code here:
+        String escrito = SegundoPokemon.getText().trim();
+
+        if (escrito.equalsIgnoreCase(nombrePoke1)
+                || escrito.equalsIgnoreCase(nombrePoke2)
+                || escrito.equalsIgnoreCase(nombrePoke3)) {
+
+            String ruta = "/proyectopokemon/Imagenes/" + escrito.toLowerCase() + ".png";
+            SegundoPokemonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource(ruta)));
+
+        }
     }//GEN-LAST:event_SegundoPokemonActionPerformed
 
     private void TercerPokemonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TercerPokemonActionPerformed
-        // TODO add your handling code here:
+        String escrito = TercerPokemon.getText().trim();
+
+        if (escrito.equalsIgnoreCase(nombrePoke1)
+                || escrito.equalsIgnoreCase(nombrePoke2)
+                || escrito.equalsIgnoreCase(nombrePoke3)) {
+
+            String ruta = "/proyectopokemon/Imagenes/" + escrito.toLowerCase() + ".png";
+            TercerPokemonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource(ruta)));
+
+        }
     }//GEN-LAST:event_TercerPokemonActionPerformed
 
     /**
@@ -289,6 +327,7 @@ BatallaUI ventana = new BatallaUI();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea ListaPokemonesDisponibles;
+    private javax.swing.JTextField Mensaje;
     private javax.swing.JTextField PrimerPokemon;
     private javax.swing.JLabel PrimerPokemonIMG;
     private javax.swing.JTextField SegundoPokemon;

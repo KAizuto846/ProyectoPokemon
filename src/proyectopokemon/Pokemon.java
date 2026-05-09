@@ -1,5 +1,6 @@
 package proyectopokemon;
 
+import java.util.ArrayList;
 
 /**
  * Clase principal del Pokémon — con constructores, getters, setters.
@@ -15,6 +16,7 @@ public class Pokemon {
     private int ataque;
     private int defensa;
     private int velocidad;
+    private ArrayList<Habilidad> habilidades; // @isai — lista de habilidades del Pokémon
     
     // -- Constructor con argumentos (Requisito #3) --
     public Pokemon(String nombre, TipoPokemon tipo, int nivel) {
@@ -25,7 +27,8 @@ public class Pokemon {
         this.hp = this.hpMax;
         this.ataque = tipo.getAtaqueBase() + (nivel * 3);
         this.defensa = 30 + (nivel * 2);
-       } 
+        this.habilidades = new ArrayList<>(); // @riztutov — inicializar la lista
+       }
 
     // -- Getters y Setters (Requisito #3) --
 
@@ -98,6 +101,15 @@ public class Pokemon {
     // -- Métodos de instancia --
 
 
+
+   // -- Métodos para habilidades — @isai
+    public void agregarHabilidad(Habilidad h) {
+        this.habilidades.add(h);
+    }
+
+    public ArrayList<Habilidad> getHabilidades() {
+        return habilidades;
+    }
 
     public boolean estaVivo() {
         return hp > 0;
