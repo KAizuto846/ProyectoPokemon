@@ -1,23 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package proyectopokemon;
 
 import java.util.Random;
 
-/**
- *
- * @author LCE 2-13
- */
+
 public class BatallaUI extends javax.swing.JFrame {
 
-    // -- Campos para los 3 Pokémon del jugador — @isai
     private String p1;
     private String p2;
     private String p3;
     
-    // -- Datos de la batalla — @riztutov
     private Pokemon pokemonAliado;
     private Pokemon pokemonRival;
     private Batalla batalla;
@@ -27,7 +18,6 @@ public class BatallaUI extends javax.swing.JFrame {
         initComponents();
     }
 
-    // Constructor con los 3 Pokémon seleccionados — @isai
     BatallaUI(String poke1, String poke2, String poke3) {
         initComponents();
         this.p1 = poke1;
@@ -37,7 +27,7 @@ public class BatallaUI extends javax.swing.JFrame {
         conectarBotones();
     }
 
-    // Inicializa los Pokémon y la batalla — @riztutov
+ 
     private void inicializarBatalla() {
         pokemonAliado = crearPokemon(p1);
         pokemonAliado.agregarHabilidad(new Habilidad("Ataque Básico", "Golpe normal", 40, 100));
@@ -55,7 +45,7 @@ public class BatallaUI extends javax.swing.JFrame {
         actualizarUI();
     }
 
-    // Conecta los botones con sus acciones — @isai
+    
     private void conectarBotones() {
         LuchaBoton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
