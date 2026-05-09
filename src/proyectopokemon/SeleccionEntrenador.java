@@ -27,9 +27,9 @@ public class SeleccionEntrenador extends javax.swing.JFrame {
     private void initComponents() {
 
         PMasculinoIMG = new javax.swing.JLabel();
-        jCheckBox13 = new javax.swing.JCheckBox();
+        PersonajeF = new javax.swing.JCheckBox();
         PFemeninoIMG = new javax.swing.JLabel();
-        jCheckBox14 = new javax.swing.JCheckBox();
+        PersonajeM = new javax.swing.JCheckBox();
         NombreUsuario = new javax.swing.JTextField();
         BotonGuardar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -46,13 +46,25 @@ public class SeleccionEntrenador extends javax.swing.JFrame {
 
         PMasculinoIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/PersonajeMasculino1_x2.png"))); // NOI18N
 
-        jCheckBox13.addActionListener(new java.awt.event.ActionListener() {
+        PersonajeF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox13ActionPerformed(evt);
+                PersonajeFActionPerformed(evt);
             }
         });
 
         PFemeninoIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/PersonajeFemenino_igualada.png"))); // NOI18N
+
+        PersonajeM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PersonajeMActionPerformed(evt);
+            }
+        });
+
+        NombreUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NombreUsuarioActionPerformed(evt);
+            }
+        });
 
         BotonGuardar.setText("GUARDAR");
 
@@ -110,11 +122,11 @@ public class SeleccionEntrenador extends javax.swing.JFrame {
                         .addGap(309, 309, 309)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jCheckBox14)
+                                .addComponent(PersonajeM)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(PMasculinoIMG)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jCheckBox13)
+                                .addComponent(PersonajeF)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(PFemeninoIMG))
                             .addComponent(jLabel1)))
@@ -141,8 +153,8 @@ public class SeleccionEntrenador extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(PFemeninoIMG)
                         .addComponent(PMasculinoIMG, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE))
-                    .addComponent(jCheckBox13)
-                    .addComponent(jCheckBox14))
+                    .addComponent(PersonajeF)
+                    .addComponent(PersonajeM))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
@@ -155,9 +167,20 @@ public class SeleccionEntrenador extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jCheckBox13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox13ActionPerformed
+    private void PersonajeFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PersonajeFActionPerformed
+        if (PersonajeF.isSelected()){
+        int count = 0;
+            if (PersonajeM.isSelected()){
+            count = count + 1;
+            } 
+            if (PersonajeF.isSelected()){
+            count = count + 1;
+            }
+            if (count > 1){
+                PersonajeF.setSelected(false);
+            }
+        }
+    }//GEN-LAST:event_PersonajeFActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         SeleccionPokemon mostrar = new SeleccionPokemon();
@@ -173,6 +196,25 @@ public class SeleccionEntrenador extends javax.swing.JFrame {
         SeleccionOrdenPokemon mostrar = new SeleccionOrdenPokemon();
         mostrar.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void PersonajeMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PersonajeMActionPerformed
+        if (PersonajeM.isSelected()){
+        int count = 0;
+            if (PersonajeM.isSelected()){
+            count = count + 1;
+            } 
+            if (PersonajeF.isSelected()){
+            count = count + 1;
+            }
+            if (count > 1){
+                PersonajeM.setSelected(false);
+            }
+        }
+    }//GEN-LAST:event_PersonajeMActionPerformed
+
+    private void NombreUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NombreUsuarioActionPerformed
+        String nombreUsuario=NombreUsuario.getText();
+    }//GEN-LAST:event_NombreUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -214,8 +256,8 @@ public class SeleccionEntrenador extends javax.swing.JFrame {
     private javax.swing.JTextField NombreUsuario;
     private javax.swing.JLabel PFemeninoIMG;
     private javax.swing.JLabel PMasculinoIMG;
-    private javax.swing.JCheckBox jCheckBox13;
-    private javax.swing.JCheckBox jCheckBox14;
+    private javax.swing.JCheckBox PersonajeF;
+    private javax.swing.JCheckBox PersonajeM;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu2;
