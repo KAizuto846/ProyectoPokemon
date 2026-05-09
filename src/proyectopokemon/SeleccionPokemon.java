@@ -375,7 +375,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
 
             if (count > 3) {
-                Charizard.setSelected(false);
+                Piplup.setSelected(false);
                 Mensaje.setText("Solo puedes seleccionar 3 pokemones");
             }
         }
@@ -416,7 +416,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
 
             if (count > 3) {
-                Charizard.setSelected(false);
+                Skarmory.setSelected(false);
                 Mensaje.setText("Solo puedes seleccionar 3 pokemones");
             }
         }
@@ -457,7 +457,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
 
             if (count > 3) {
-                Charizard.setSelected(false);
+                Raikou.setSelected(false);
                 Mensaje.setText("Solo puedes seleccionar 3 pokemones");
             }
         }
@@ -558,7 +558,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
 
             if (count > 3) {
-                Charizard.setSelected(false);
+                Blaziken.setSelected(false);
                 Mensaje.setText("Solo puedes seleccionar 3 pokemones");
             }
         }
@@ -599,7 +599,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
 
             if (count > 3) {
-                Charizard.setSelected(false);
+                Snorlax.setSelected(false);
                 Mensaje.setText("Solo puedes seleccionar 3 pokemones");
             }
         }
@@ -640,7 +640,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
 
             if (count > 3) {
-                Charizard.setSelected(false);
+                Vaporeon.setSelected(false);
                 Mensaje.setText("Solo puedes seleccionar 3 pokemones");
             }
         }
@@ -681,7 +681,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
 
             if (count > 3) {
-                Charizard.setSelected(false);
+                Umbreon.setSelected(false);
                 Mensaje.setText("Solo puedes seleccionar 3 pokemones");
             }
         }
@@ -722,7 +722,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
 
             if (count > 3) {
-                Charizard.setSelected(false);
+                Gardevoir.setSelected(false);
                 Mensaje.setText("Solo puedes seleccionar 3 pokemones");
             }
         }
@@ -763,7 +763,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             }
 
             if (count > 3) {
-                Charizard.setSelected(false);
+                Cacturne.setSelected(false);
                 Mensaje.setText("Solo puedes seleccionar 3 pokemones");
             }
         }
