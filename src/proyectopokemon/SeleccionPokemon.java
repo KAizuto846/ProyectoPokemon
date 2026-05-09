@@ -2,8 +2,16 @@ package proyectopokemon;
 
 public class SeleccionPokemon extends javax.swing.JFrame {
 
+    private String nombreEntrenador; // @riztutov — nombre del jugador
+
     public SeleccionPokemon() {
         initComponents();
+    }
+
+    // @isai — constructor con nombre del entrenador
+    public SeleccionPokemon(String nombre) {
+        initComponents();
+        this.nombreEntrenador = nombre;
     }
 
     @SuppressWarnings("unchecked")
@@ -552,7 +560,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
             i=i+1;
         }
 
-        SeleccionOrdenPokemon ventana = new SeleccionOrdenPokemon(poke1, poke2, poke3);
+        SeleccionOrdenPokemon ventana = new SeleccionOrdenPokemon(nombreEntrenador, poke1, poke2, poke3);
         ventana.setVisible(true);
         this.dispose();
 

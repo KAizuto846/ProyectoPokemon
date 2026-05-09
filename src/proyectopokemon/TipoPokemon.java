@@ -1,9 +1,5 @@
 package proyectopokemon;
 
-/**
- * Enum con 3 o más campos — REQUISITO #1
- * Representa los tipos de Pokémon/Personajes en el juego.
- */
 public enum TipoPokemon {
 
     FUEGO("Fuego","Charizard", "fuego.png", 120,50,65),
@@ -16,9 +12,7 @@ public enum TipoPokemon {
     PSIQUICO("Psiquico","Gardevoir", "siniestro.png", 150, 25,80),
     NORMAL("Normal","Snorlax", "siniestro.png", 100, 100,40);
 
-
-
-    // -- Campos del enum (requisito: 3 o más) --
+    // Campos del enum
     private final String tipo;
     private final String nombre;
     private final String iconoRuta;

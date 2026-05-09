@@ -52,7 +52,7 @@ public class inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotonComenzarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComenzarActionPerformed
-        SeleccionPokemon ventana = new SeleccionPokemon();
+        SeleccionEntrenador ventana = new SeleccionEntrenador();
         ventana.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_BotonComenzarActionPerformed

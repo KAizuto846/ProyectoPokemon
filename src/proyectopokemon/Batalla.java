@@ -11,8 +11,8 @@ public class Batalla {
     private static final Random RNG = new Random();
     public static final int MAX_TURNOS = 20; // static final (Requisito #7)
 
-    private Pokemon pokemonJugador;
-    private Pokemon pokemonRival;
+    private final Pokemon pokemonJugador;
+    private final Pokemon pokemonRival;
     private int turno;
     private boolean terminada;
 

@@ -8,9 +8,12 @@ public class SeleccionOrdenPokemon extends javax.swing.JFrame {
     private String nombrePoke1;
     private String nombrePoke2;
     private String nombrePoke3;
+    private String nombreEntrenador; // @riztutov
 
-    SeleccionOrdenPokemon(String poke1, String poke2, String poke3) {
+    // @isai — constructor con nombre + 3 Pokémon
+    SeleccionOrdenPokemon(String nombre, String poke1, String poke2, String poke3) {
         initComponents();
+        this.nombreEntrenador = nombre;
         this.nombrePoke1 = poke1;
         this.nombrePoke2 = poke2;
         this.nombrePoke3 = poke3;
@@ -229,7 +232,7 @@ public class SeleccionOrdenPokemon extends javax.swing.JFrame {
             return;
         }
         
-        BatallaUI ventana = new BatallaUI(p1, p2, p3);
+        BatallaUI ventana = new BatallaUI(nombreEntrenador, p1, p2, p3);
         ventana.setVisible(true);
         this.dispose();
     }

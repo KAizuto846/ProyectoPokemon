@@ -15,6 +15,12 @@ public class SeleccionEntrenador extends javax.swing.JFrame {
      */
     public SeleccionEntrenador() {
         initComponents();
+        // @riztutov — acción para el botón GUARDAR
+        BotonGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonGuardarActionPerformed(evt);
+            }
+        });
     }
 
     /**
@@ -215,6 +221,18 @@ public class SeleccionEntrenador extends javax.swing.JFrame {
     private void NombreUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NombreUsuarioActionPerformed
         String nombreUsuario=NombreUsuario.getText();
     }//GEN-LAST:event_NombreUsuarioActionPerformed
+
+    // @isai — guardar nombre y abrir selección de Pokémon
+    private void BotonGuardarActionPerformed(java.awt.event.ActionEvent evt) {
+        String nombre = NombreUsuario.getText().trim();
+        if (nombre.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "Escribe tu nombre primero");
+            return;
+        }
+        SeleccionPokemon ventana = new SeleccionPokemon(nombre);
+        ventana.setVisible(true);
+        this.dispose();
+    }
 
     /**
      * @param args the command line arguments
