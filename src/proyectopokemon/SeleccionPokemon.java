@@ -54,6 +54,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
         VaporeonIMG = new javax.swing.JLabel();
         Vaporeon = new javax.swing.JCheckBox();
         CharizardIMG = new javax.swing.JLabel();
+        Mensaje = new javax.swing.JTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
@@ -87,6 +88,11 @@ public class SeleccionPokemon extends javax.swing.JFrame {
         });
 
         Umbreon.setText("UMBREON");
+        Umbreon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UmbreonActionPerformed(evt);
+            }
+        });
 
         SkarmoryIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/skarmory.png"))); // NOI18N
 
@@ -109,20 +115,40 @@ public class SeleccionPokemon extends javax.swing.JFrame {
         GardevoirIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/gardevoir.png"))); // NOI18N
 
         Gardevoir.setText("GARDEVOIR");
+        Gardevoir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GardevoirActionPerformed(evt);
+            }
+        });
 
         CacturneIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/cacturne.png"))); // NOI18N
 
         Cacturne.setText("CACTURNE");
+        Cacturne.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CacturneActionPerformed(evt);
+            }
+        });
 
         UmbreonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/umbreon.png"))); // NOI18N
 
         Charizard.setText("CHARIZARD");
+        Charizard.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CharizardActionPerformed(evt);
+            }
+        });
 
-        BlazikenIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/blaziken.png"))); // NOI18N
+        BlazikenIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/blaziken.png"))); // NOI18N
 
         Blaziken.setText("BLAZIKEN");
+        Blaziken.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BlazikenActionPerformed(evt);
+            }
+        });
 
-        PiplupIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/piplup.png"))); // NOI18N
+        PiplupIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/piplup.png"))); // NOI18N
 
         Piplup.setText("PIPLUP");
         Piplup.addActionListener(new java.awt.event.ActionListener() {
@@ -134,12 +160,22 @@ public class SeleccionPokemon extends javax.swing.JFrame {
         SnorlaxIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/snorlax.png"))); // NOI18N
 
         Snorlax.setText("SNORLAX");
+        Snorlax.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SnorlaxActionPerformed(evt);
+            }
+        });
 
         VaporeonIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/vaporeon.png"))); // NOI18N
 
         Vaporeon.setText("VAPOREON");
+        Vaporeon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VaporeonActionPerformed(evt);
+            }
+        });
 
-        CharizardIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/charizard.png"))); // NOI18N
+        CharizardIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectopokemon/Imagenes/sprites_png/charizard.png"))); // NOI18N
 
         jMenu2.setText("ELIGE TU POKEMON");
 
@@ -190,45 +226,49 @@ public class SeleccionPokemon extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(CharizardIMG)
-                                    .addComponent(Charizard))
-                                .addGap(74, 74, 74)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(BlazikenIMG)
-                                    .addComponent(Blaziken)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Umbreon)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(23, 23, 23)
-                                        .addComponent(UmbreonIMG)))
-                                .addGap(89, 89, 89)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(Skarmory)
-                                    .addComponent(SkarmoryIMG))))
-                        .addGap(12, 12, 12)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(63, 63, 63)
-                                .addComponent(Piplup))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(74, 74, 74)
-                                .addComponent(PiplupIMG))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(63, 63, 63)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(RaikouIMG)
-                                    .addComponent(Raikou))))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(CharizardIMG)
+                                            .addComponent(Charizard))
+                                        .addGap(74, 74, 74)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(BlazikenIMG)
+                                            .addComponent(Blaziken)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(Umbreon)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(23, 23, 23)
+                                                .addComponent(UmbreonIMG)))
+                                        .addGap(89, 89, 89)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(Skarmory)
+                                            .addComponent(SkarmoryIMG))))
+                                .addGap(12, 12, 12)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(63, 63, 63)
+                                        .addComponent(Piplup))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(74, 74, 74)
+                                        .addComponent(PiplupIMG))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(63, 63, 63)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(RaikouIMG)
+                                            .addComponent(Raikou)))))
+                            .addComponent(Mensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 436, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(57, 57, 57)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(Gardevoir)
                                             .addComponent(GardevoirIMG)))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(53, 53, 53)
+                                        .addGap(0, 0, 0)
                                         .addComponent(SnorlaxIMG, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(40, 40, 40)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -241,12 +281,12 @@ public class SeleccionPokemon extends javax.swing.JFrame {
                                         .addComponent(Cacturne)
                                         .addComponent(BotonFinalizar))))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(54, 54, 54)
+                                .addGap(1, 1, 1)
                                 .addComponent(Snorlax))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(329, 329, 329)
                         .addComponent(jLabel1)))
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(88, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -291,7 +331,9 @@ public class SeleccionPokemon extends javax.swing.JFrame {
                     .addComponent(Skarmory)
                     .addComponent(Umbreon))
                 .addGap(48, 48, 48)
-                .addComponent(BotonFinalizar)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BotonFinalizar)
+                    .addComponent(Mensaje, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(71, Short.MAX_VALUE))
         );
 
@@ -299,15 +341,126 @@ public class SeleccionPokemon extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void PiplupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PiplupActionPerformed
-        // TODO add your handling code here:
+        if (Piplup.isSelected()) {
+            int count = 0;
+            if (Charizard.isSelected()) {
+                count = count + 1;
+            }
+            if (Blaziken.isSelected()) {
+                count = count + 1;
+            }
+            if (Piplup.isSelected()) {
+                count = count + 1;
+            }
+            if (Snorlax.isSelected()) {
+                count = count + 1;
+            }
+            if (Vaporeon.isSelected()) {
+                count = count + 1;
+            }
+            if (Umbreon.isSelected()) {
+                count = count + 1;
+            }
+            if (Skarmory.isSelected()) {
+                count = count + 1;
+            }
+            if (Raikou.isSelected()) {
+                count = count + 1;
+            }
+            if (Gardevoir.isSelected()) {
+                count = count + 1;
+            }
+            if (Cacturne.isSelected()) {
+                count = count + 1;
+            }
+
+            if (count > 3) {
+                Charizard.setSelected(false);
+                Mensaje.setText("Solo puedes seleccionar 3 pokemones");
+            }
+        }
     }//GEN-LAST:event_PiplupActionPerformed
 
     private void SkarmoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SkarmoryActionPerformed
-        // TODO add your handling code here:
+        if (Skarmory.isSelected()) {
+            int count = 0;
+            if (Charizard.isSelected()) {
+                count = count + 1;
+            }
+            if (Blaziken.isSelected()) {
+                count = count + 1;
+            }
+            if (Piplup.isSelected()) {
+                count = count + 1;
+            }
+            if (Snorlax.isSelected()) {
+                count = count + 1;
+            }
+            if (Vaporeon.isSelected()) {
+                count = count + 1;
+            }
+            if (Umbreon.isSelected()) {
+                count = count + 1;
+            }
+            if (Skarmory.isSelected()) {
+                count = count + 1;
+            }
+            if (Raikou.isSelected()) {
+                count = count + 1;
+            }
+            if (Gardevoir.isSelected()) {
+                count = count + 1;
+            }
+            if (Cacturne.isSelected()) {
+                count = count + 1;
+            }
+
+            if (count > 3) {
+                Charizard.setSelected(false);
+                Mensaje.setText("Solo puedes seleccionar 3 pokemones");
+            }
+        }
     }//GEN-LAST:event_SkarmoryActionPerformed
 
     private void RaikouActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RaikouActionPerformed
-        // TODO add your handling code here:
+        if (Raikou.isSelected()) {
+            int count = 0;
+            if (Charizard.isSelected()) {
+                count = count + 1;
+            }
+            if (Blaziken.isSelected()) {
+                count = count + 1;
+            }
+            if (Piplup.isSelected()) {
+                count = count + 1;
+            }
+            if (Snorlax.isSelected()) {
+                count = count + 1;
+            }
+            if (Vaporeon.isSelected()) {
+                count = count + 1;
+            }
+            if (Umbreon.isSelected()) {
+                count = count + 1;
+            }
+            if (Skarmory.isSelected()) {
+                count = count + 1;
+            }
+            if (Raikou.isSelected()) {
+                count = count + 1;
+            }
+            if (Gardevoir.isSelected()) {
+                count = count + 1;
+            }
+            if (Cacturne.isSelected()) {
+                count = count + 1;
+            }
+
+            if (count > 3) {
+                Charizard.setSelected(false);
+                Mensaje.setText("Solo puedes seleccionar 3 pokemones");
+            }
+        }
     }//GEN-LAST:event_RaikouActionPerformed
 
     private void BotonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonFinalizarActionPerformed
@@ -320,14 +473,301 @@ public class SeleccionPokemon extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-         SeleccionEntrenador mostrar = new SeleccionEntrenador();
+        SeleccionEntrenador mostrar = new SeleccionEntrenador();
         mostrar.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-         SeleccionOrdenPokemon mostrar = new SeleccionOrdenPokemon();
+        SeleccionOrdenPokemon mostrar = new SeleccionOrdenPokemon();
         mostrar.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void CharizardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CharizardActionPerformed
+        if (Charizard.isSelected()) {
+            int count = 0;
+            if (Charizard.isSelected()) {
+                count = count + 1;
+            }
+            if (Blaziken.isSelected()) {
+                count = count + 1;
+            }
+            if (Piplup.isSelected()) {
+                count = count + 1;
+            }
+            if (Snorlax.isSelected()) {
+                count = count + 1;
+            }
+            if (Vaporeon.isSelected()) {
+                count = count + 1;
+            }
+            if (Umbreon.isSelected()) {
+                count = count + 1;
+            }
+            if (Skarmory.isSelected()) {
+                count = count + 1;
+            }
+            if (Raikou.isSelected()) {
+                count = count + 1;
+            }
+            if (Gardevoir.isSelected()) {
+                count = count + 1;
+            }
+            if (Cacturne.isSelected()) {
+                count = count + 1;
+            }
+
+            if (count > 3) {
+                Charizard.setSelected(false);
+                Mensaje.setText("Solo puedes seleccionar 3 pokemones");
+            }
+        }
+    }//GEN-LAST:event_CharizardActionPerformed
+
+    private void BlazikenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlazikenActionPerformed
+        if (Blaziken.isSelected()) {
+            int count = 0;
+            if (Charizard.isSelected()) {
+                count = count + 1;
+            }
+            if (Blaziken.isSelected()) {
+                count = count + 1;
+            }
+            if (Piplup.isSelected()) {
+                count = count + 1;
+            }
+            if (Snorlax.isSelected()) {
+                count = count + 1;
+            }
+            if (Vaporeon.isSelected()) {
+                count = count + 1;
+            }
+            if (Umbreon.isSelected()) {
+                count = count + 1;
+            }
+            if (Skarmory.isSelected()) {
+                count = count + 1;
+            }
+            if (Raikou.isSelected()) {
+                count = count + 1;
+            }
+            if (Gardevoir.isSelected()) {
+                count = count + 1;
+            }
+            if (Cacturne.isSelected()) {
+                count = count + 1;
+            }
+
+            if (count > 3) {
+                Charizard.setSelected(false);
+                Mensaje.setText("Solo puedes seleccionar 3 pokemones");
+            }
+        }
+    }//GEN-LAST:event_BlazikenActionPerformed
+
+    private void SnorlaxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SnorlaxActionPerformed
+        if (Snorlax.isSelected()) {
+            int count = 0;
+            if (Charizard.isSelected()) {
+                count = count + 1;
+            }
+            if (Blaziken.isSelected()) {
+                count = count + 1;
+            }
+            if (Piplup.isSelected()) {
+                count = count + 1;
+            }
+            if (Snorlax.isSelected()) {
+                count = count + 1;
+            }
+            if (Vaporeon.isSelected()) {
+                count = count + 1;
+            }
+            if (Umbreon.isSelected()) {
+                count = count + 1;
+            }
+            if (Skarmory.isSelected()) {
+                count = count + 1;
+            }
+            if (Raikou.isSelected()) {
+                count = count + 1;
+            }
+            if (Gardevoir.isSelected()) {
+                count = count + 1;
+            }
+            if (Cacturne.isSelected()) {
+                count = count + 1;
+            }
+
+            if (count > 3) {
+                Charizard.setSelected(false);
+                Mensaje.setText("Solo puedes seleccionar 3 pokemones");
+            }
+        }
+    }//GEN-LAST:event_SnorlaxActionPerformed
+
+    private void VaporeonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VaporeonActionPerformed
+        if (Vaporeon.isSelected()) {
+            int count = 0;
+            if (Charizard.isSelected()) {
+                count = count + 1;
+            }
+            if (Blaziken.isSelected()) {
+                count = count + 1;
+            }
+            if (Piplup.isSelected()) {
+                count = count + 1;
+            }
+            if (Snorlax.isSelected()) {
+                count = count + 1;
+            }
+            if (Vaporeon.isSelected()) {
+                count = count + 1;
+            }
+            if (Umbreon.isSelected()) {
+                count = count + 1;
+            }
+            if (Skarmory.isSelected()) {
+                count = count + 1;
+            }
+            if (Raikou.isSelected()) {
+                count = count + 1;
+            }
+            if (Gardevoir.isSelected()) {
+                count = count + 1;
+            }
+            if (Cacturne.isSelected()) {
+                count = count + 1;
+            }
+
+            if (count > 3) {
+                Charizard.setSelected(false);
+                Mensaje.setText("Solo puedes seleccionar 3 pokemones");
+            }
+        }
+    }//GEN-LAST:event_VaporeonActionPerformed
+
+    private void UmbreonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UmbreonActionPerformed
+        if (Umbreon.isSelected()) {
+            int count = 0;
+            if (Charizard.isSelected()) {
+                count = count + 1;
+            }
+            if (Blaziken.isSelected()) {
+                count = count + 1;
+            }
+            if (Piplup.isSelected()) {
+                count = count + 1;
+            }
+            if (Snorlax.isSelected()) {
+                count = count + 1;
+            }
+            if (Vaporeon.isSelected()) {
+                count = count + 1;
+            }
+            if (Umbreon.isSelected()) {
+                count = count + 1;
+            }
+            if (Skarmory.isSelected()) {
+                count = count + 1;
+            }
+            if (Raikou.isSelected()) {
+                count = count + 1;
+            }
+            if (Gardevoir.isSelected()) {
+                count = count + 1;
+            }
+            if (Cacturne.isSelected()) {
+                count = count + 1;
+            }
+
+            if (count > 3) {
+                Charizard.setSelected(false);
+                Mensaje.setText("Solo puedes seleccionar 3 pokemones");
+            }
+        }
+    }//GEN-LAST:event_UmbreonActionPerformed
+
+    private void GardevoirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GardevoirActionPerformed
+        if (Gardevoir.isSelected()) {
+            int count = 0;
+            if (Charizard.isSelected()) {
+                count = count + 1;
+            }
+            if (Blaziken.isSelected()) {
+                count = count + 1;
+            }
+            if (Piplup.isSelected()) {
+                count = count + 1;
+            }
+            if (Snorlax.isSelected()) {
+                count = count + 1;
+            }
+            if (Vaporeon.isSelected()) {
+                count = count + 1;
+            }
+            if (Umbreon.isSelected()) {
+                count = count + 1;
+            }
+            if (Skarmory.isSelected()) {
+                count = count + 1;
+            }
+            if (Raikou.isSelected()) {
+                count = count + 1;
+            }
+            if (Gardevoir.isSelected()) {
+                count = count + 1;
+            }
+            if (Cacturne.isSelected()) {
+                count = count + 1;
+            }
+
+            if (count > 3) {
+                Charizard.setSelected(false);
+                Mensaje.setText("Solo puedes seleccionar 3 pokemones");
+            }
+        }
+    }//GEN-LAST:event_GardevoirActionPerformed
+
+    private void CacturneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CacturneActionPerformed
+        if (Cacturne.isSelected()) {
+            int count = 0;
+            if (Charizard.isSelected()) {
+                count = count + 1;
+            }
+            if (Blaziken.isSelected()) {
+                count = count + 1;
+            }
+            if (Piplup.isSelected()) {
+                count = count + 1;
+            }
+            if (Snorlax.isSelected()) {
+                count = count + 1;
+            }
+            if (Vaporeon.isSelected()) {
+                count = count + 1;
+            }
+            if (Umbreon.isSelected()) {
+                count = count + 1;
+            }
+            if (Skarmory.isSelected()) {
+                count = count + 1;
+            }
+            if (Raikou.isSelected()) {
+                count = count + 1;
+            }
+            if (Gardevoir.isSelected()) {
+                count = count + 1;
+            }
+            if (Cacturne.isSelected()) {
+                count = count + 1;
+            }
+
+            if (count > 3) {
+                Charizard.setSelected(false);
+                Mensaje.setText("Solo puedes seleccionar 3 pokemones");
+            }
+        }
+    }//GEN-LAST:event_CacturneActionPerformed
 
     /**
      * @param args the command line arguments
@@ -374,6 +814,7 @@ public class SeleccionPokemon extends javax.swing.JFrame {
     private javax.swing.JLabel CharizardIMG;
     private javax.swing.JCheckBox Gardevoir;
     private javax.swing.JLabel GardevoirIMG;
+    private javax.swing.JTextField Mensaje;
     private javax.swing.JCheckBox Piplup;
     private javax.swing.JLabel PiplupIMG;
     private javax.swing.JCheckBox Raikou;

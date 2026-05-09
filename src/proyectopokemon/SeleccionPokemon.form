@@ -113,62 +113,68 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="CharizardIMG" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Charizard" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="BlazikenIMG" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Blaziken" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="Umbreon" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                      <Component id="UmbreonIMG" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="CharizardIMG" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Charizard" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="BlazikenIMG" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Blaziken" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="Umbreon" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                              <Component id="UmbreonIMG" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="Skarmory" min="-2" max="-2" attributes="0"/>
+                                          <Component id="SkarmoryIMG" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="Skarmory" min="-2" max="-2" attributes="0"/>
-                                  <Component id="SkarmoryIMG" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                              <Component id="Piplup" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-                              <Component id="PiplupIMG" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="RaikouIMG" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Raikou" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                                      <Component id="Piplup" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                                      <Component id="PiplupIMG" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="RaikouIMG" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Raikou" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
                           </Group>
+                          <Component id="Mensaje" min="-2" pref="436" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Component id="Gardevoir" min="-2" max="-2" attributes="0"/>
                                           <Component id="GardevoirIMG" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
                                       <Component id="SnorlaxIMG" min="-2" pref="77" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -187,7 +193,7 @@
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                               <Component id="Snorlax" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -197,7 +203,7 @@
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="111" max="32767" attributes="0"/>
+              <EmptySpace pref="88" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -255,7 +261,10 @@
                   <Component id="Umbreon" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-              <Component id="BotonFinalizar" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="BotonFinalizar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Mensaje" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace pref="71" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -282,6 +291,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="UMBREON"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UmbreonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="SkarmoryIMG">
       <Properties>
@@ -324,6 +336,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="GARDEVOIR"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GardevoirActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="CacturneIMG">
       <Properties>
@@ -336,6 +351,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="CACTURNE"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CacturneActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="UmbreonIMG">
       <Properties>
@@ -348,6 +366,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="CHARIZARD"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CharizardActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="BlazikenIMG">
       <Properties>
@@ -360,6 +381,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="BLAZIKEN"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BlazikenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="PiplupIMG">
       <Properties>
@@ -387,6 +411,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="SNORLAX"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SnorlaxActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="VaporeonIMG">
       <Properties>
@@ -399,6 +426,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="VAPOREON"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VaporeonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="CharizardIMG">
       <Properties>
@@ -406,6 +436,8 @@
           <Image iconType="3" name="/proyectopokemon/Imagenes/sprites_png/charizard.png"/>
         </Property>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Mensaje">
     </Component>
   </SubComponents>
 </Form>
