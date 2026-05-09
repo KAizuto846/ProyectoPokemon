@@ -88,7 +88,7 @@ public class BatallaUI extends javax.swing.JFrame {
             return;
         }
         if (!pokemonAliado.estaVivo()) {
-            CuadroDeMensajes.setText("|| " + pokemonAliado.getNombre() + " no puede luchar. ¡Cambia de Pokémon! ||");
+            CuadroDeMensajes.setText("|| " + pokemonAliado.getNombre() + " no puede luchar. ¡Cambia de Pokemon! ||");
             return;
         }
 
@@ -126,7 +126,7 @@ public class BatallaUI extends javax.swing.JFrame {
                 actualizarUI();
                 return;
             }
-            mensaje += " ¡Cambia de Pokémon! ||";
+            mensaje += " ¡Cambia de Pokemon! ||";
         }
 
         CuadroDeMensajes.setText(mensaje);
