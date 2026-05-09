@@ -17,8 +17,22 @@ public class SeleccionOrdenPokemon extends javax.swing.JFrame {
         initComponents();
     }
 
+    // Variables para guardar los 3 Pokémon seleccionados
+    private String nombrePoke1;
+    private String nombrePoke2;
+    private String nombrePoke3;
+
+    // Constructor que recibe los 3 Pokémon desde SeleccionPokemon — @isai
     SeleccionOrdenPokemon(String poke1, String poke2, String poke3) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        initComponents();
+        this.nombrePoke1 = poke1;
+        this.nombrePoke2 = poke2;
+        this.nombrePoke3 = poke3;
+        
+        // Mostrar los Pokémon disponibles en el JTextArea — @riztutov
+        ListaPokemonesDisponibles.setText(
+            "Pokémon 1: " + poke1 + "\nPokémon 2: " + poke2 + "\nPokémon 3: " + poke3
+        );
     }
 
     /**
